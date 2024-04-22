@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-// import logo from './logo.jpeg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
+import Header from './components/Header';
+import Sidebar from './components/Sidebar';
+import MainContent from './components/MainContent';
+// import JsonDataPage from './components/JsonDataPage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Never Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Header />
+        <div className="container">
+          <Sidebar />
+          {/* <Routes> */}
+            {/* Routes without using Switch */}
+            {/* <Route path="/json-data" component={JsonDataPage} /> */}
+            {/* Add more routes as needed */}
+          {/* </Routes> */}
+          <MainContent />
+
+          
+          
+        </div>
+      </div>
+    </Router>
   );
 }
 

@@ -1,0 +1,21 @@
+/* components/Sidebar.css */
+aside {
+    background-color: #f4f4f4;
+    padding: 20px;
+    width: 200px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  ul li:hover {
+    color: #007bff;
+  }
+  
